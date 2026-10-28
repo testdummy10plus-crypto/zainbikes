@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zain Bikes | Delivery Bikes & Quads in Durban & Amanzimtoti</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Tailwind Custom Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#FF5722',
+              dark: '#18181B',
+              gray: '#F4F4F5',
+              card: '#FFFFFF'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- ==================== TOP LOCATION BAR ==================== -->
+  <div class="bg-brand-dark text-gray-300 text-xs py-2 px-4 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4">
+        <span class="flex items-center"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-orange mr-1"></i> <strong>Main Branch:</strong> 104 Umbilo Rd, Durban</span>
+        <span class="hidden md:inline text-gray-600">|</span>
+        <span class="flex items-center"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-orange mr-1"></i> <strong>Branch 2:</strong> 18 Commercial Rd, Amanzimtoti</span>
+      </div>
+      <div class="flex items-center space-x-3">
+        <span class="text-gray-400">Call / WhatsApp:</span>
+        <a href="https://wa.me/+27677410965" class="text-emerald-400 font-bold hover:underline">067 741 0965</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==================== HEADER / NAVIGATION ==================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center space-x-2">
+          <span class="text-2xl font-black tracking-wider text-brand-dark uppercase">
+            ZAIN<span class="text-brand-orange">BIKES</span>
+          </span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-bold text-gray-700 uppercase tracking-wide">
+          <a href="#inventory" class="hover:text-brand-orange transition">Bikes & Quads</a>
+          <a href="#branches" class="hover:text-brand-orange transition">Our Showrooms</a>
+          <a href="#why-us" class="hover:text-brand-orange transition">Why Zain Bikes</a>
+          <a href="#about" class="hover:text-brand-orange transition">About Us</a>
+          <a href="#contact" class="hover:text-brand-orange transition">Contact</a>
+        </nav>
+
+        <!-- Right CTA Button -->
+        <div class="hidden lg:flex items-center space-x-4">
+          <a href="https://wa.me/+27677410965" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider transition shadow-md">
+            <i data-lucide="message-square" class="w-4 h-4 fill-current"></i>
+            <span>WhatsApp (067 741 0965)</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700 hover:text-black focus:outline-none">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-gray-200 bg-white px-4 pt-3 pb-6 space-y-3">
+      <a href="#inventory" class="block text-base font-bold text-gray-800 hover:text-brand-orange uppercase">Bikes & Quads</a>
+      <a href="#branches" class="block text-base font-bold text-gray-800 hover:text-brand-orange uppercase">Our Showrooms</a>
+      <a href="#why-us" class="block text-base font-bold text-gray-800 hover:text-brand-orange uppercase">Why Zain Bikes</a>
+      <a href="#about" class="block text-base font-bold text-gray-800 hover:text-brand-orange uppercase">About Us</a>
+      <a href="#contact" class="block text-base font-bold text-gray-800 hover:text-brand-orange uppercase">Contact</a>
+      <a href="https://wa.me/+27677410965" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center space-x-2 bg-emerald-500 text-white py-3 rounded-xl font-bold w-full uppercase text-xs tracking-wider">
+        <i data-lucide="message-square" class="w-5 h-5 fill-current"></i>
+        <span>Chat on WhatsApp (067 741 0965)</span>
+      </a>
+    </div>
+  </header>
+
+
+  <!-- ==================== BEST SELLING  ==================== -->
+  <section class="relative bg-gradient-to-b from-gray-50 to-white py-16 lg:py-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text -->
+        <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+          <span class="inline-block bg-brand-orange/10 text-brand-orange font-bold text-xs tracking-widest uppercase px-3.5 py-1.5 rounded-full">
+            Durban & Amanzimtoti Showrooms
+          </span>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-brand-dark tracking-tight leading-tight uppercase">
+            Quality Delivery Bikes & Quads <span class="text-brand-orange">At Unbeatable Prices</span>
+          </h1>
+          <p class="text-base sm:text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            Zain Bikes provides fuel-efficient workhorses, scooters, and recreational quad bikes designed to offer maximum reliability with minimum maintenance costs.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#inventory" class="w-full sm:w-auto bg-brand-orange hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl text-center shadow-lg hover:shadow-orange-500/20 transition uppercase tracking-wider text-sm">
+              Explore Interactive Catalog
+            </a>
+            <a href="https://wa.me/+27677410965" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-brand-dark hover:bg-black text-white font-bold px-8 py-4 rounded-xl text-center shadow-md transition uppercase tracking-wider text-sm flex items-center justify-center space-x-2">
+              <i data-lucide="message-circle" class="w-5 h-5 text-emerald-400"></i>
+              <span>Inquire via WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="pt-6 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs font-semibold text-gray-500">
+            <span class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 text-brand-orange mr-1.5"></i> 2 Showrooms (Durban & Toti)</span>
+            <span class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 text-brand-orange mr-1.5"></i> Delivery & Courier Fleet Ready</span>
+            <span class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 text-brand-orange mr-1.5"></i> Interactive Product Modals</span>
+          </div>
+        </div>
+
+        <!-- Featured Hero Image -->
+        <div class="lg:col-span-6 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="absolute -inset-2 bg-gradient-to-r from-brand-orange to-amber-500 rounded-3xl blur-2xl opacity-20"></div>
+            <img src="/images/125cc-delivery-bike.png" alt="Zain Delivery Bike Fleet" onerror="handleImageError(this)" class="relative rounded-2xl shadow-2xl object-cover w-full h-[360px] sm:h-[450px]">
+            <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-xl shadow-lg border border-gray-100 flex items-center justify-between">
+              <div>
+                <p class="text-xs uppercase font-bold text-brand-orange">Commercial Delivery Specialist</p>
+                <p class="text-sm font-black text-brand-dark">125cc Commercial Delivery Bike</p>
+              </div>
+              <button onclick="openModal(0)" class="bg-brand-orange text-white text-xs font-bold px-3 py-1.5 rounded-lg hover:bg-orange-600 transition">View Specs</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== INTERACTIVE PRODUCT CATALOG ==================== -->
+  <section id="inventory" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="text-3xl font-black text-brand-dark uppercase tracking-wide">Interactive Showroom Inventory</h2>
+        <div class="h-1 w-12 bg-brand-orange mx-auto mt-2"></div>
+        <p class="text-sm text-gray-500 mt-3">Click on any product to view multiple angles, full technical specifications, and detailed features.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap justify-center gap-3 mb-10">
+        <button onclick="filterCatalog('all')" class="filter-btn active-filter bg-brand-dark text-white px-5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition">All Models</button>
+        <button onclick="filterCatalog('bike')" class="filter-btn bg-white text-gray-700 hover:bg-gray-100 px-5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider border border-gray-200 transition">Motorbikes & Scooters</button>
+        <button onclick="filterCatalog('quad')" class="filter-btn bg-white text-gray-700 hover:bg-gray-100 px-5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider border border-gray-200 transition">Quad Bikes</button>
+      </div>
+
+      <!-- Dynamic Inventory Grid -->
+      <div id="catalog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Rendered dynamically by JavaScript below -->
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== PRODUCT DETAIL MODAL (POPUP) ==================== -->
+  <div id="product-modal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative border border-gray-100">
+      
+      <!-- Close Button -->
+      <button onclick="closeModal()" class="absolute top-4 right-4 z-10 w-10 h-10 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-full flex items-center justify-center transition">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="grid lg:grid-cols-12 gap-8 p-6 sm:p-8">
+        
+        <!-- Left: Image Gallery -->
+        <div class="lg:col-span-6 space-y-4">
+          <div class="relative h-72 sm:h-80 bg-gray-100 rounded-2xl overflow-hidden border border-gray-200">
+            <img id="modal-main-img" src="" alt="Product View" onerror="handleImageError(this)" class="w-full h-full object-cover transition-all duration-300">
+            <span id="modal-badge" class="absolute top-3 right-3 bg-brand-dark text-white text-xs font-bold px-3 py-1 rounded-md"></span>
+          </div>
+          
+          <!-- Image Thumbnails Bar -->
+          <div class="space-y-1">
+            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Click images to switch view:</p>
+            <div id="modal-thumbnails" class="flex gap-3 overflow-x-auto pb-2">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Information & Specs -->
+        <div class="lg:col-span-6 flex flex-col justify-between space-y-6">
+          <div>
+            <span id="modal-category" class="text-xs font-bold text-brand-orange uppercase tracking-widest"></span>
+            <h3 id="modal-title" class="text-2xl sm:text-3xl font-black text-brand-dark uppercase mt-1"></h3>
+            <p id="modal-tagline" class="text-xs text-gray-500 mt-1 font-semibold"></p>
+            
+            <div class="my-4 p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xs text-gray-400 font-bold block uppercase">Official Showroom Price</span>
+              <span id="modal-price" class="text-2xl font-black text-brand-orange"></span>
+            </div>
+
+            <p id="modal-description" class="text-xs text-gray-600 leading-relaxed"></p>
+
+            <!-- Detailed Specifications List -->
+            <div class="mt-4 pt-4 border-t border-gray-100">
+              <h4 class="text-xs font-bold text-brand-dark uppercase tracking-wider mb-2">Technical Features</h4>
+              <ul id="modal-features" class="space-y-2 text-xs text-gray-600">
+                <!-- Rendered via JS -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- Modal Action Buttons -->
+          <div class="space-y-3 pt-4 border-t border-gray-100">
+            <a id="modal-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3.5 rounded-xl text-center text-xs uppercase tracking-wider flex items-center justify-center space-x-2 transition shadow-md">
+              <i data-lucide="message-square" class="w-4 h-4 fill-current"></i>
+              <span>Order / Inquire on WhatsApp</span>
+            </a>
+            <div class="flex justify-between items-center text-[11px] text-gray-400 font-medium">
+              <span><i data-lucide="map-pin" class="w-3 h-3 inline text-brand-orange"></i> Available at 104 Umbilo Rd (Durban)</span>
+              <span>& 18 Commercial Rd (Toti)</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==================== OUR BRANCHES SECTION ==================== -->
+  <section id="branches" class="py-16 bg-white border-y border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-black text-brand-dark uppercase tracking-wide">Visit Our Two Showrooms</h2>
+        <div class="h-1 w-12 bg-brand-orange mx-auto mt-2"></div>
+        <p class="text-sm text-gray-500 mt-3">Conveniently located in Durban Central and Amanzimtoti.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Branch 1: Umbilo Road -->
+        <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200 hover:border-brand-orange transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="w-10 h-10 bg-brand-orange/10 text-brand-orange rounded-xl flex items-center justify-center font-bold">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-brand-orange uppercase tracking-wider">Main Branch</span>
+                <h3 class="text-xl font-black text-brand-dark uppercase">Durban Showroom</h3>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700 font-bold mb-1">Address:</p>
+            <p class="text-sm text-gray-600 mb-4">104 Umbilo Road, Durban, KwaZulu-Natal</p>
+            <p class="text-xs text-gray-500 leading-relaxed">Visit our main Durban showroom for motorbikes, quads, test rides, spare parts, and fleet quotes.</p>
+          </div>
+          
+          <div class="mt-6 pt-6 border-t border-gray-200 flex items-center justify-between">
+            <span class="text-xs text-gray-400 font-semibold">Mon - Sat: Open Daily</span>
+            <a href="https://wa.me/+27677410965?text=Hi%20Zain%20Bikes,%20I%20want%20to%20visit%20the%20104%20Umbilo%20Road%20Durban%20branch" target="_blank" class="bg-brand-dark hover:bg-black text-white text-xs font-bold px-4 py-2 rounded-lg transition flex items-center space-x-1">
+              <span>Contact Durban</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Branch 2: Amanzimtoti -->
+        <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200 hover:border-brand-orange transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="w-10 h-10 bg-brand-orange/10 text-brand-orange rounded-xl flex items-center justify-center font-bold">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-brand-orange uppercase tracking-wider">Second Branch</span>
+                <h3 class="text-xl font-black text-brand-dark uppercase">Amanzimtoti Showroom</h3>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700 font-bold mb-1">Address:</p>
+            <p class="text-sm text-gray-600 mb-4">18 Commercial Road, Amanzimtoti, KwaZulu-Natal</p>
+            <p class="text-xs text-gray-500 leading-relaxed">Serving the South Coast region with quad bikes, delivery motorbikes, accessories, and maintenance.</p>
+          </div>
+          
+          <div class="mt-6 pt-6 border-t border-gray-200 flex items-center justify-between">
+            <span class="text-xs text-gray-400 font-semibold">Mon - Sat: Open Daily</span>
+            <a href="https://wa.me/+27677410965?text=Hi%20Zain%20Bikes,%20I%20want%20to%20visit%20the%2018%20Commercial%20Road%20Amanzimtoti%20branch" target="_blank" class="bg-brand-dark hover:bg-black text-white text-xs font-bold px-4 py-2 rounded-lg transition flex items-center space-x-1">
+              <span>Contact Toti</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== WHY CHOOSE ZAIN BIKES ==================== -->
+  <section id="why-us" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl font-black text-brand-dark uppercase tracking-wide">Why Choose Zain Bikes?</h2>
+        <p class="text-sm text-gray-500 mt-2">Providing high reliability, simple maintenance, and direct savings.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-center">
+          <div class="w-14 h-14 bg-brand-orange/10 text-brand-orange rounded-xl flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="dollar-sign" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-bold text-lg text-brand-dark mb-2">Budget Pricing</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Priced to ensure maximum affordability for private riders and fleet operations.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-center">
+          <div class="w-14 h-14 bg-brand-orange/10 text-brand-orange rounded-xl flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="fuel" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-bold text-lg text-brand-dark mb-2">Fuel Efficient</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Engineered for low fuel consumption to keep your running costs as low as possible.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-center">
+          <div class="w-14 h-14 bg-brand-orange/10 text-brand-orange rounded-xl flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="wrench" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-bold text-lg text-brand-dark mb-2">In-Stock Spares</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Full availability of affordable replacement parts across both Durban and Toti locations.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-center">
+          <div class="w-14 h-14 bg-brand-orange/10 text-brand-orange rounded-xl flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="shield-check" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-bold text-lg text-brand-dark mb-2">Commercial Duty</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Built with strong frames and heavy-duty suspensions ready for daily work or recreational fun.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== ABOUT & FOUNDER ==================== -->
+  <section id="about" class="py-20 bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-brand-orange font-bold text-xs tracking-widest uppercase">About Zain Bikes</span>
+          <h2 class="text-3xl sm:text-4xl font-black uppercase">Dependable Motorbikes & Quads in KwaZulu-Natal</h2>
+          <p class="text-sm text-gray-300 leading-relaxed">
+            Zain Bikes provides individuals, courier drivers, and commercial businesses with reliable, budget-friendly motorbikes, scooters, and quad bikes.
+          </p>
+          
+          <div class="p-6 bg-gray-800/80 rounded-2xl border border-gray-700">
+            <p class="text-xs text-gray-400 uppercase font-bold tracking-wider">Business Founder</p>
+            <h3 class="text-xl font-bold text-white mt-1">Founder: <span class="text-brand-orange">Mohammad Akhtar</span></h3>
+            <p class="text-xs text-gray-300 mt-2 leading-relaxed">
+              Founded and managed by <strong>Mohammad Akhtar</strong>, Zain Bikes continues to serve the Durban and Amanzimtoti communities with quality vehicles and reliable customer service.
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 bg-gray-800 p-8 rounded-3xl border border-gray-700 text-center">
+          <div class="w-16 h-16 bg-brand-orange/20 text-brand-orange rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="award" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-lg font-bold uppercase">Our Commitment</h3>
+          <p class="text-xs text-gray-400 mt-2 leading-relaxed">
+            "Providing accessible, durable, and economical motorbike and quad solutions across KZN."
+          </p>
+          <div class="mt-6 pt-6 border-t border-gray-700">
+            <a href="https://wa.me/+27677410965" target="_blank" class="inline-flex items-center space-x-2 text-emerald-400 text-xs font-bold hover:underline">
+              <span>Chat with us directly on WhatsApp</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== CONTACT & INQUIRY FORM ==================== -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12">
+        
+        <!-- Direct Contact Details -->
+        <div class="lg:col-span-5 space-y-8">
+          <div>
+            <h2 class="text-3xl font-black text-brand-dark uppercase">Contact Our Team</h2>
+            <p class="text-sm text-gray-500 mt-2">Get in touch or visit either of our two branches.</p>
+          </div>
+
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center text-brand-orange flex-shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs text-gray-400 font-bold uppercase">Main Durban Branch</p>
+                <p class="font-bold text-brand-dark">104 Umbilo Road, Durban</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center text-brand-orange flex-shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs text-gray-400 font-bold uppercase">Amanzimtoti Branch</p>
+                <p class="font-bold text-brand-dark">18 Commercial Road, Amanzimtoti</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center text-brand-orange flex-shrink-0">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs text-gray-400 font-bold uppercase">Phone / WhatsApp</p>
+                <p class="font-bold text-brand-dark">067 741 0965</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct WhatsApp Button -->
+          <a href="https://wa.me/+27677410965" target="_blank" rel="noopener noreferrer" class="block w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold p-4 rounded-2xl text-center text-sm uppercase tracking-wider transition shadow-lg">
+            <i data-lucide="message-circle" class="w-5 h-5 inline-block mr-2 fill-current"></i>
+            Chat On WhatsApp (067 741 0965)
+          </a>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-7 bg-gray-50 p-8 sm:p-10 rounded-3xl border border-gray-200">
+          <form id="contact-form" class="space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-xs font-bold uppercase text-gray-600 mb-2">Your Name</label>
+                <input type="text" required placeholder="John Doe" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-orange">
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase text-gray-600 mb-2">Phone / WhatsApp Number</label>
+                <input type="tel" required placeholder="067 741 0965" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-orange">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-xs font-bold uppercase text-gray-600 mb-2">Preferred Branch</label>
+                <select class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-orange">
+                  <option>104 Umbilo Rd (Durban)</option>
+                  <option>18 Commercial Rd (Amanzimtoti)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase text-gray-600 mb-2">Vehicle of Interest</label>
+                <select class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-orange">
+                  <option>125cc Delivery Bike</option>
+                  <option>125cc Scooter</option>
+                  <option>49cc Kids Quad Bike</option>
+                  <option>110cc Junior Quad Bike</option>
+                  <option>125cc Teen Quad Bike</option>
+                  <option>150cc Adult Quad Bike</option>
+                  <option>49cc Dirt Bike</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase text-gray-600 mb-2">Message</label>
+              <textarea rows="3" required placeholder="Let us know what bike or quad you are looking for..." class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-orange"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-brand-dark hover:bg-black text-white font-bold py-4 rounded-xl text-xs uppercase tracking-wider transition shadow-lg">
+              Send Inquiry
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-brand-dark text-gray-400 py-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <div>
+          <a href="#" class="text-2xl font-black tracking-wider text-white uppercase">
+            ZAIN<span class="text-brand-orange">BIKES</span>
+          </a>
+          <p class="text-xs leading-relaxed mt-3 text-gray-400">
+            Providing reliable motorbikes, scooters, and quad bikes across KwaZulu-Natal.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Our Branches</h4>
+          <ul class="space-y-2 text-xs">
+            <li><strong class="text-gray-200">Durban:</strong> 104 Umbilo Road</li>
+            <li><strong class="text-gray-200">Amanzimtoti:</strong> 18 Commercial Road</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Leadership</h4>
+          <p class="text-xs text-gray-300 font-semibold">Founder: Mohammad Akhtar</p>
+          <p class="text-xs text-gray-400 mt-1">Dedicated to reliable vehicle sales & service.</p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Direct Contact</h4>
+          <p class="text-xs text-gray-300">WhatsApp / Call:</p>
+          <a href="https://wa.me/+27677410965" class="text-sm font-bold text-emerald-400 hover:underline">067 741 0965</a>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Credits -->
+      <div class="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+        <div>
+          <p>&copy; 2026 Zain Bikes. All rights reserved. Founded by <strong class="text-gray-300">Mohammad Akhtar</strong>.</p>
+        </div>
+        <div>
+          <p class="bg-gray-800/80 px-4 py-2 rounded-lg border border-gray-700 text-gray-300">
+            Website Designed & Developed by <strong class="text-brand-orange">Mohammad Aflah</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ==================== JAVASCRIPT & INTERACTIVE DATA ==================== -->
+  <script>
+    function handleImageError(image) {
+      if (image.dataset.fallbackAttempted) return;
+
+      const imagePath = new URL(image.src, window.location.href).pathname;
+      if (!imagePath.startsWith('/images/')) return;
+
+      image.dataset.fallbackAttempted = 'true';
+      image.src = `./public${imagePath}`;
+    }
+
+    // Master Product Catalog Database with Multiple Gallery Images for Each Product
+    const catalogData = [
+      {
+        id: 0,
+        type: "bike",
+        title: "Zain 125cc Commercial Delivery Bike",
+        category: "Delivery Workhorse",
+        badge: "Best Seller",
+        price: "Inquire Today",
+        tagline: "Air-Cooled 4-Stroke | Carrier Rack Ready | High Mileage",
+        description: "Engineered specifically for courier drivers and food delivery riders across Durban. Designed to maximize earnings with minimal fuel consumption and basic maintenance.",
+        images: [
+          "/images/125cc-delivery-bike.png",
+            
+        ],
+        features: [
+          "Ultra-low fuel consumption (approx. 2.1L / 100km)",
+          "Box and bracket sold seperately for delivery use",
+          "Reinforced dual rear suspension for commercial loads",
+          "Available at both Durban (Umbilo Rd) & Amanzimtoti branches"
+        ]
+      },
+      {
+        id: 1,
+        type: "bike",
+        title: "Zain 125cc Commuter Scooter",
+        category: "Automatic Scooter",
+        badge: "Urban Commuter",
+        price: "Inquire Today",
+        tagline: "Twist & Go Automatic | Underseat Storage | Agile Handling",
+        description: "The ideal automatic scooter for fast city navigation, daily commuting, or lightweight delivery tasks in busy traffic conditions.",
+        images: [
+          "/images/125cc-scooter-black.jpg",
+          
+        ],
+        features: [
+          "Fully automatic CV-transmission (Twist & Go)",
+          "Lockable underseat helmet & luggage compartment",
+          "Lightweight chassis for easy parking and maneuvering",
+          "Low seat height suitable for all riders"
+        ]
+      },
+      {
+        id: 2,
+        type: "quad",
+        title: "49cc Kids Mini Quad Bike",
+        category: "Kids Quad",
+        badge: "Kids Entry Level",
+        price: "Inquire Today",
+        tagline: "2-Stroke Engine | Safety Speed Governor | Pull Start",
+        description: "Built for safety and excitement for young riders starting out. Features built-in speed limiters to keep parents in total control.",
+        images: [
+          "/images/1778954740074.png",
+          
+        ],
+        features: [
+          "49cc single cylinder air-cooled engine",
+          "Parental speed throttle limiter screw",
+          "Front & rear disc brakes for quick stopping",
+          "Durable steel bumper guard"
+        ]
+      },
+      {
+        id: 3,
+        type: "quad",
+        title: "110cc Junior Utility Quad Bike",
+        category: "Junior Quad",
+        badge: "Electric Start",
+        price: "Inquire Today",
+        tagline: "4-Stroke Automatic | Push-Button Start | Utility Racks",
+        description: "A solid 110cc quad bike designed for kids and teens. Features simple automatic transmission with reverse for effortless riding on dirt or grass.",
+        images: [
+          "/images/1778954216748.png",
+         
+        ],
+        features: [
+          "4-stroke quiet engine with push-button electric start",
+          "Fully automatic transmission with reverse gear",
+          "Front and rear steel cargo racks",
+          "All-terrain knobby tires"
+        ]
+      },
+      {
+        id: 4,
+        type: "quad",
+        title: "125cc Teen Sport Quad Bike",
+        category: "Teen Quad",
+        badge: "Sport Performance",
+        price: "Inquire Today",
+        tagline: "4-Stroke High Torque | Hydraulic Brakes | Dual Shock",
+        description: "Designed for teens seeking off-road fun. Excellent climbing power, dual front suspension, and aggressive sporty styling.",
+        images: [
+          "/images/1778953666528.png",
+      
+        ],
+        features: [
+          "Powerful 125cc 4-stroke engine",
+          "Rugged independent front A-arm suspension",
+          "Hydraulic rear disc brake system",
+          "Reinforced frame for jump absorption"
+        ]
+      },
+      {
+        id: 5,
+        type: "quad",
+        title: "125cc Heavy-Duty Quad Bike",
+        category: "Adult Quad",
+        badge: "Full Sized",
+        price: "Inquire Today",
+        tagline: "Full Adult Size Frame | High Clearance | Off-Road Utility",
+        description: "Our largest quad bike model built for adult riders, recreational trails, and farm utility work. Features maximum load capacity and high ground clearance.",
+        images: [
+          "/images/1778954027953.png",
+       
+        ],
+        features: [
+          "Full-sized chassis and seat height",
+          "Automatic CVT gearbox with reverse",
+          "Heavy-duty tow hitch ball option & cargo racks",
+          "Off-road high grip wide tires"
+        ]
+      },
+      {
+        id: 6,
+        type: "bike",
+        title: "49cc Dirt bikes for kids ",
+        category: "Kids Quad",
+        badge: "Dirt bike ",
+        price: "Inquire Today",
+        tagline: "OFF road kids ride | Rugged Frame | pull start",
+        description: "A dependable kids 49cc Dirt  bike found in stores at Durban and Amanzimtoti.",
+        images: [
+          "/images/1778954489102.png",
+         
+        ],
+        features: [
+          "Built for off road use ",
+          "Stable handling at low and high speeds",
+          "Ideal young kids ages 2 plus",
+          "Available for viewing at both showrooms"
+        ]
+      }
+    ];
+
+    // Function to Render Catalog Cards
+    function renderCatalog(items) {
+      const grid = document.getElementById('catalog-grid');
+      grid.innerHTML = '';
+
+      items.forEach((item) => {
+        const cardHtml = `
+          <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition flex flex-col justify-between group">
+            <div>
+              <div class="relative h-60 overflow-hidden bg-gray-100 cursor-pointer" onclick="openModal(${item.id})">
+                <img src="${item.images[0]}" alt="${item.title}" onerror="handleImageError(this)" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <span class="absolute top-3 right-3 bg-brand-dark text-white text-xs font-bold px-2.5 py-1 rounded shadow">${item.badge}</span>
+                <span class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md text-brand-dark text-[11px] font-bold px-2.5 py-1 rounded-md shadow flex items-center gap-1">
+                  <i data-lucide="layers" class="w-3.5 h-3.5 text-brand-orange"></i> ${item.images.length} Photos
+                </span>
+              </div>
+              <div class="p-6">
+                <span class="text-[10px] font-bold text-brand-orange uppercase tracking-wider">${item.category}</span>
+                <h3 class="font-black text-lg text-brand-dark uppercase mt-0.5">${item.title}</h3>
+                <p class="text-xs text-gray-500 mt-1">${item.tagline}</p>
+                <button onclick="openModal(${item.id})" class="mt-4 text-xs font-bold text-brand-orange hover:underline flex items-center space-x-1">
+                  <span>View Details & Specs</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </button>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <div class="flex items-center justify-between border-t border-gray-100 pt-4">
+                <div>
+                  <span class="text-xs text-gray-400 font-bold block uppercase">Price</span>
+                  <span class="text-lg font-black text-brand-orange">${item.price}</span>
+                </div>
+                <button onclick="openModal(${item.id})" class="bg-brand-dark hover:bg-black text-white text-xs font-bold px-4 py-2.5 rounded-lg flex items-center space-x-1.5 transition">
+                  <i data-lucide="eye" class="w-4 h-4"></i>
+                  <span>Inspect</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+        grid.innerHTML += cardHtml;
+      });
+
+      // Re-initialize icons inside rendered cards
+      lucide.createIcons();
+    }
+
+    // Filter Catalog Function
+    function filterCatalog(category) {
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(btn => btn.classList.remove('bg-brand-dark', 'text-white'));
+      buttons.forEach(btn => btn.classList.add('bg-white', 'text-gray-700'));
+
+      event.target.classList.remove('bg-white', 'text-gray-700');
+      event.target.classList.add('bg-brand-dark', 'text-white');
+
+      if (category === 'all') {
+        renderCatalog(catalogData);
+      } else {
+        const filtered = catalogData.filter(item => item.type === category);
+        renderCatalog(filtered);
+      }
+    }
+
+    // Modal Controller Functions
+    function openModal(id) {
+      const product = catalogData.find(item => item.id === id);
+      if (!product) return;
+
+      document.getElementById('modal-main-img').src = product.images[0];
+      document.getElementById('modal-badge').innerText = product.badge;
+      document.getElementById('modal-category').innerText = product.category;
+      document.getElementById('modal-title').innerText = product.title;
+      document.getElementById('modal-tagline').innerText = product.tagline;
+      document.getElementById('modal-price').innerText = product.price;
+      document.getElementById('modal-description').innerText = product.description;
+
+      // Render Thumbnails
+      const thumbContainer = document.getElementById('modal-thumbnails');
+      thumbContainer.innerHTML = '';
+      product.images.forEach((imgUrl, index) => {
+        const thumbHtml = `
+          <img src="${imgUrl}" onerror="handleImageError(this)" onclick="changeModalImg('${imgUrl}')" class="w-16 h-16 object-cover rounded-xl border-2 border-gray-200 hover:border-brand-orange cursor-pointer transition flex-shrink-0">
+        `;
+        thumbContainer.innerHTML += thumbHtml;
+      });
+
+      // Render Specs
+      const featuresContainer = document.getElementById('modal-features');
+      featuresContainer.innerHTML = '';
+      product.features.forEach(feat => {
+        const featHtml = `
+          <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-500 mr-2 flex-shrink-0"></i> ${feat}</li>
+        `;
+        featuresContainer.innerHTML += featHtml;
+      });
+
+      // Update WhatsApp Link with specific product title
+      const waMessage = encodeURIComponent(`Hi Zain Bikes, I want to inquire about the ${product.title}`);
+      document.getElementById('modal-wa-btn').href = `https://wa.me/+27677410965?text=${waMessage}`;
+
+      // Open Modal Overlay
+      document.getElementById('product-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+
+      lucide.createIcons();
+    }
+
+    function changeModalImg(imgUrl) {
+      document.getElementById('modal-main-img').src = imgUrl;
+    }
+
+    function closeModal() {
+      document.getElementById('product-modal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close Modal when clicking outside the box
+    document.getElementById('product-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'product-modal') {
+        closeModal();
+      }
+    });
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Form Submission Handler
+    document.getElementById('contact-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you for contacting Zain Bikes! We will get back to you shortly or message you on WhatsApp.');
+    });
+
+    // Initial Load
+    renderCatalog(catalogData);
+    lucide.createIcons();
+  </script>
+</body>
+</html>
